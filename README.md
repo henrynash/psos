@@ -7,7 +7,6 @@ This solution starter was created by technologists from IBM.
 
 Joseph (Tyler) DeBartolo, Kallie Fergerson, Kimberly Holmes, Paul Jennas, Rinku Kanwar, Henry Nash, Joe Nichols, Jeremy O'Mard, Osai O Osaigbovo, Andrea Ritterbeck, Thomas Schott, Natilie Taylor
 
-
 ## Contents
 
 1. [Overview](#overview)
@@ -22,6 +21,7 @@ Joseph (Tyler) DeBartolo, Kallie Fergerson, Kimberly Holmes, Paul Jennas, Rinku 
 9. [License](#license)
 
 ## Overview
+
 The **Police Suppression Order System (PSOS)** is a searchable database that contains information about court ordered "suppression orders" and allows lawyers and their staff, police, civic organizations, and individuals to search the database by an officer’s name, jurisdiction, or department via web, smartphone, or third-party application.
 
 PSOS provides multiple methods to upload information from a Suppression Order.
@@ -57,16 +57,18 @@ TBA
 *Add graphics psos_persona_def_attny.png and psos_persona_prosecutor.png*
 
 #### Needs Statement
+
 A defense attorney or prosecutor needs a way to conduct a comprehensive online search for existing suppression orders so that he/she can be sufficiently prepared for court in a timely manner. 
 
 #### Design Requirements
+
 - The ability to quickly search for specific officers
 - A way to see a pattern of repeat, racially motivated actions by an officer
 - Mobile first interface to enable easy searching on the go (ex: going into court)
 
 ### UI Wireframes
-*Add graphics psos_wf-001.png, psos_wf-002.png, psos_wf-003.png, psos_wf-004.png, psos_wf-005.png.*
 
+*Add graphics psos_wf-001.png, psos_wf-002.png, psos_wf-003.png, psos_wf-004.png, psos_wf-005.png.*
 
 ## Documents
 
@@ -93,13 +95,12 @@ TBA
 
 ### Steps
 
-1. [Provision a CouchDB instance using Cloudant](#2-Provision-a-CouchDB-instance-using-Cloudant).
-1. [Run the server](#4-run-the-server).
-1. [Run the mobile application](#5-run-the-mobile-application).
+1. [Provision a CouchDB instance using Cloudant](#1-Provision-a-CouchDB-instance-using-Cloudant).
+1. [Provision some Cloud Object Storage](#2-Provision-Cloud-Object_Storage).
+1. [Run the server](#3-run-the-server).
+1. [Run the mobile application](#4-run-the-mobile-application).
 
 ### 1: Provision a CouchDB instance using Cloudant
-
-TBA - [if running in the sandbox, there is a short cut to this]
 
 Log into the IBM Cloud and provision a [CouchDB instance using Cloudant](https://www.ibm.com/cloud/cloudant).
 
@@ -108,7 +109,13 @@ Log into the IBM Cloud and provision a [CouchDB instance using Cloudant](https:/
 1. Once your Cloudant instance has been created, you need to create a service credential that the CIR API Server can use to communicate with it. By selecting your running Cloudant instance, you can choose **Service credentials** from the left-hand menu. Create a new service credential and give it a name (it doesn't matter what you call it).
 1. Once created, you can display the credentials by selecting **view service credentials**, and then copy the credential, so you are ready to paste it into the code of the API server in Step 4.
 
-### 2. Run the server
+### 2: Provision Cloud Object Storage
+
+Log into the IBM Cloud and...
+
+(Add more here)
+
+### 3. Run the server
 
 To set up and launch the server application:
 
@@ -130,7 +137,7 @@ To set up and launch the server application:
             1. The server can be accessed at a URL using the **name** given in the `manifest.yml` file (for example,  <https://my-app-name.bluemix.net>).
     1. The api supports a swagger doc interface in a browser, served from `url`/api-docs. Substitutue your particular server address for `url` e.g. <http://localhost:3000/api-docs> if running locally.
 
-### 3. Run the mobile application
+### 4. Run the mobile application
 
 To run the mobile application (using the Xcode iOS Simulator):
 
@@ -149,7 +156,13 @@ To run the mobile application (using the Xcode iOS Simulator):
 
 With the application running in the simulator, you should be able to navigate through the various screens:
 
-TBA
+![Screen 6](/images/screen_shot_6.png)
+![Screen 5](/images/screen_shot_5.png)
+![Screen 7](/images/screen_shot_7.png)
+![Screen 4](/images/screen_shot_4.png)
+![Screen 1](/images/screen_shot_1.png)
+![Screen 3](/images/screen_shot_3.png)
+![Screen 2](/images/screen_shot_2.png)
 
 ## PSOS Recommendations for Enhancements of Capabilities
 
